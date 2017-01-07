@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>‰ Resultat ‰</title>
+</head>
+<body>
+
+<h1>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp ‰ Resultat ‰</h1>
+
+
+<p> Dersom ditt alkoholnivå i bodet på nåværende tidspunkt er {{ prom }} ‰, </p>
+<p> og du i løpet av de neste {{ timer }} timene inntar {{ antall }} enheter {{ alk_type }} av størrelsen {{ enhet_stoer }} liter, </p>
+<p> vil du om {{ timer }} timer ha en promille på {{ prom2 }}</p>
+
+<br>
+
+{% if dodelig %}
+    <p> Oufh, du er litt av en {{ kjoen }}!</p>
+    <p>En så høy promille er dødelig, oppsøk et sykehus pronto, eller skriv ditt testamentet nå.</p>
+{% else %}
+<p> Du kan enda drikke mer før det blir en reell fare for liv og helse. Skål!</p>
+{% endif %}
+
+
+
+
+</body>
+</html>
